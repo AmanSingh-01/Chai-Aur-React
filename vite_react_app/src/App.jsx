@@ -1,7 +1,13 @@
+import Chai from "./Chai";
+import Coffee from "./Coffee";
+
 function App() {
   return (
     <>
-      <h1>Chai aur react with vite || aman singh.</h1>
+      <Chai />
+      <h1>Chai aur React</h1>
+      <p>Test para</p>
+      <Coffee />
     </>
   );
 }
