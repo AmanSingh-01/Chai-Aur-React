@@ -1,6 +1,6 @@
 function Coffee(){
     return(
-        <h1>This is coffee component..</h1>
+        <h3>This is coffee component..</h3>
     )
 }
 export default Coffee
