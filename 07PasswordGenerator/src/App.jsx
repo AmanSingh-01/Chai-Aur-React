@@ -36,9 +36,9 @@ function App() {
 
   return (
     <>
-      <div className="w-full max-w-md mx-auto shadow-sm rounded-lg px-4 py-3 my-8 text-orange-400 bg-gray-800">
+      <div className="w-full max-w-md mx-auto shadow-md shadow-gray-500 rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800">
         <h1 className="text-white text-center mb-5">Password Generator</h1>
-        <div className="flex shadow-sm rounded-lg overflow-hidden mb-4 shrink-0">
+        <div className="flex shadow-md shadow-blue-600 rounded-lg overflow-hidden mb-4 shrink-0">
           <input
             type="text"
             value={password}
@@ -48,7 +48,7 @@ function App() {
             ref={passwordRef}
           />
           <button
-            className="outline-none bg-blue-500 hover:bg-green-600 text-white px-3 py-1 "
+            className="outline-none bg-blue-600 hover:bg-green-700 text-white px-3 py-1 "
             onClick={copyPasswordOnClipboard}
           >
             copy
@@ -90,6 +90,7 @@ function App() {
               type="checkbox"
               defaultChecked={charAllowed}
               id="charInput"
+              className="cursor-pointer"
               onChange={(e) => {
                 setCharAllowed((prev) => !prev);
               }}
